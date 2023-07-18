@@ -48,7 +48,7 @@ export default async function ProfilePage() {
           className="w-48 "
         />
       </div>
-      <form action={uploadFile}>
+      {/*       <form action={uploadFile}>
         <div className="flex flex-col gap-2 m-12 border rounded-md p-4">
           <label htmlFor="file">Change Photo</label>
           <input type="file" name="file" id="file" />
@@ -56,8 +56,8 @@ export default async function ProfilePage() {
             Upload file
           </button>
         </div>
-      </form>
-      {/* <ClientForm uploadFile={uploadFile} /> */}
+      </form> */}
+      <ClientForm uploadFile={uploadFile} />
     </>
   );
 }
