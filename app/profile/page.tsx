@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 import { revalidatePath } from "next/cache";
-import { ClientForm } from "@/app/profile/client-form";
+import { UploadForm } from "./upload-form";
 const item = {
   first: "Homer",
   last: "Simpson",
@@ -57,7 +57,7 @@ export default async function ProfilePage() {
           </button>
         </div>
       </form> */}
-      <ClientForm uploadFile={uploadFile} />
+      <UploadForm uploadFile={uploadFile} />
     </>
   );
 }

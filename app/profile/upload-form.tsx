@@ -1,6 +1,6 @@
 "use client";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
-export function ClientForm({
+export function UploadForm({
   uploadFile,
 }: {
   uploadFile: (formData: FormData) => Promise<any>;
